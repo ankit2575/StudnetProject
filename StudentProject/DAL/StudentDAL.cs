@@ -33,7 +33,8 @@ namespace DAL
 
         public Student GetStudentByContact(string contact)
         {
-            return context.Students.Find(contact);
+            Student data =(Student) context.Students.FirstOrDefault(x => x.Contact==contact);
+            return data;
         }
 
         public Student GetStudentById(int Id)
@@ -41,9 +42,10 @@ namespace DAL
             return context.Students.Find(Id);
         }
 
-        public Student GetStudentByRoll(int Id)
+        public Student GetStudentByRoll(int roll)
         {
-            return context.Students.Find(Id);
+            Student data = (Student)context.Students.FirstOrDefault(x => x.Roll==roll);
+            return data;
         }
 
         public bool Insert(Student student)

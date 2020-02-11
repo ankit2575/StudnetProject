@@ -23,9 +23,9 @@ namespace BLL
         {
             return objDb.GetStudentById(id);
         }
-        public Student GetStudentByRoll(int id)
+        public Student GetStudentByRoll(int roll)
         {
-            return objDb.GetStudentByRoll(id);
+            return objDb.GetStudentByRoll(roll);
         }
         public Student GetStudentByContact(string contact)
         {
