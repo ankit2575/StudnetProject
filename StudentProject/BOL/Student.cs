@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BOL
 {
@@ -17,8 +12,12 @@ namespace BOL
         public string FatherName { get; set; }
         public string BlodGroup { get; set; }
         public string Contact { get; set; }
-        public string Cource { get; set; }
+        public string Class { get; set; }
         public int Roll { get; set; }
+        public string Address { get; set; }
         public string Photo { get; set; }
+        public string Session { get; set; }
+
+
     }
 }
