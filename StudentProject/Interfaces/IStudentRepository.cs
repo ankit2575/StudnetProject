@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Interfaces
 {
-    public interface StudentRepository
+    public interface IStudentRepository
     {
         IEnumerable<Student> GetAllStudents();
         Student GetStudentById(int Id);

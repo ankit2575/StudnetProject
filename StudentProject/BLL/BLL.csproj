@@ -31,6 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BOL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StudentBOL.1.0.0\lib\net472\BOL.dll</HintPath>
+    </Reference>
+    <Reference Include="DAL, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DAL.1.0.0\lib\net472\DAL.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -45,14 +51,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BOL\BOL.csproj">
-      <Project>{287710DA-810A-4A34-9311-AECBBD6C06F2}</Project>
-      <Name>BOL</Name>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{8DB11197-5C34-4A13-9652-8415EB69DB72}</Project>
+      <Name>Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DAL\DAL.csproj">
-      <Project>{925009aa-3ea2-45a4-9944-09bbb67e9d03}</Project>
-      <Name>DAL</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

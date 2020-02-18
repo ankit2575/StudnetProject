@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace DAL
 {
-    public class StudentDAL : Context, StudentRepository
+    public class StudentDAL : Context, IStudentRepository
     {
         public bool Delete(int Id)
         {
